@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Menu -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/soben-logo.png" alt="soben_logo"
+          /></a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item">
+              <a class="btn btn-third" href="#">Contact</a>
+            </li>
+            <li id="night-mode" class="nav-item">
+              <a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="heading">Portfolio</h1>
+        <div class="web">
+          <h2 class="sub-heading">
+            <i class="fa-solid fa-file-code"></i> Web <span> Development</span>
+          </h2>
+          <div class="web-portfolio">
+            <a id="doe" href="#" class="card show-modal">
+              <div class="card-body">
+                <img src="img/portfolio/web/doe website.jpg" alt="" />
+              </div>
+              <div class="card-header">
+                <div class="img-icon">
+                  <img src="img/portfolio/web/icon/IFL Logo.png" alt="" />
+                </div>
+                <div>
+                  <p>Department of English IFL</p>
+                </div>
+              </div>
+            </a>
+
+            <a id="brandmedia" href="#" class="card show-modal">
+              <div class="card-body">
+                <img src="img/portfolio/web/brandmedia website.jpg" />
+              </div>
+              <div class="card-header">
+                <div class="img-icon">
+                  <img src="img/portfolio/web/icon/brandmedia.png" alt="" />
+                </div>
+                <div>
+                  <p>BRANDMEDIA</p>
+                </div>
+              </div>
+            </a>
+
+            <a id="brandtech" href="#" class="card show-modal">
+              <div class="card-body">
+                <img src="img/portfolio/web/brandtech.jpg" alt="" />
+              </div>
+              <div class="card-header">
+                <div class="img-icon">
+                  <img src="img/portfolio/web/icon/IFL Logo.png" alt="" />
+                </div>
+                <div>
+                  <p>BRANDTECH</p>
+                </div>
+              </div>
+            </a>
+
+            <a id="brandarts" href="#" class="card show-modal">
+              <div class="card-body">
+                <img src="img/portfolio/web/brandarts.jpg" alt="" />
+              </div>
+              <div class="card-header">
+                <div class="img-icon">
+                  <img src="img/portfolio/web/icon/IFL Logo.png" alt="" />
+                </div>
+                <div>
+                  <p>BRANDARTS</p>
+                </div>
+              </div>
+            </a>
+
+            <a id="brandbodia" href="#" class="card show-modal">
+              <div class="card-body">
+                <img src="img/portfolio/web/brandbodia.jpg" alt="" />
+              </div>
+              <div class="card-header">
+                <div class="img-icon">
+                  <img src="img/portfolio/web/icon/IFL Logo.png" alt="" />
+                </div>
+                <div>
+                  <p>Brandbodia</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal">
+            <div id="doe-modal" class="container-flex hidden">
+              <button class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="item-flex img">
+                <img src="img/portfolio/web/doe website.jpg" alt="" />
+              </div>
+              <div class="item-flex desc">
+                <h2>
+                  <i class="fa-solid fa-square-poll-vertical"></i> Project:
+                  <span>Department of English</span>
+                </h2>
+                <h2>
+                  <i class="fa-solid fa-square-arrow-up-right"></i> Website:
+                  <a href="https://doe.ifl-rupp.com/" target="_blank"
+                    >www.doe.ifl-rupp.com</a
+                  >
+                </h2>
+                <h2>
+                  <i class="fa-brands fa-facebook-square"></i> Facebook:
+                  <a
+                    href="https://web.facebook.com/IFL.Department.of.English"
+                    target="_blank"
+                    >Department of English IFL</a
+                  >
+                </h2>
+                <p class="mt-1 my-2">
+                  The Department of English, IFL is one of Cambodia's most
+                  respected, prestigious and reform-oriented English language
+                  institutions.
+                </p>
+                <a
+                  href="https://doe.ifl-rupp.com/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Visit</a
+                >
+              </div>
+            </div>
+
+            <div id="brandmedia-modal" class="container-flex hidden">
+              <button class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="item-flex img">
+                <img src="img/portfolio/web/brandmedia website.jpg" alt="" />
+              </div>
+              <div class="item-flex desc">
+                <h2>
+                  <i class="fa-solid fa-square-poll-vertical"></i> Project:
+                  <span>BRANDMEDIA</span>
+                </h2>
+                <h2>
+                  <i class="fa-solid fa-square-arrow-up-right"></i> Website:
+                  <a href="https://media.brandbodia.com/" target="_blank"
+                    >media.brandbodia.com</a
+                  >
+                </h2>
+                <h2>
+                  <i class="fa-brands fa-facebook-square"></i> Facebook:
+                  <a href="#" target="_blank">facebook.com</a>
+                </h2>
+                <p class="mt-2 my-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusamus, tempore tenetur.
+                </p>
+                <a href="#" target="_blank" class="btn btn-primary">Visit</a>
+              </div>
+            </div>
+
+            <div id="brandtech-modal" class="container-flex hidden">
+              <button class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="item-flex img">
+                <img src="img/portfolio/web/brandtech.jpg" alt="" />
+              </div>
+              <div class="item-flex desc">
+                <h2>
+                  <i class="fa-solid fa-square-poll-vertical"></i> Project:
+                  <span>BRANDTECH</span>
+                </h2>
+                <h2>
+                  <i class="fa-solid fa-square-arrow-up-right"></i> Website:
+                  <a href="https://tech.brandbodia.com/" target="_blank"
+                    >tech.brandbodia.com</a
+                  >
+                </h2>
+                <h2>
+                  <i class="fa-brands fa-facebook-square"></i> Facebook:
+                  <a href="#" target="_blank">facebook.com</a>
+                </h2>
+                <p class="mt-2 my-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusamus, tempore tenetur.
+                </p>
+                <a href="#" target="_blank" class="btn btn-primary">Visit</a>
+              </div>
+            </div>
+
+            <div id="brandarts-modal" class="container-flex hidden">
+              <button class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="item-flex img">
+                <img src="img/portfolio/web/brandarts.jpg" alt="" />
+              </div>
+              <div class="item-flex desc">
+                <h2>
+                  <i class="fa-solid fa-square-poll-vertical"></i> Project:
+                  <span>BRANDARTS</span>
+                </h2>
+                <h2>
+                  <i class="fa-solid fa-square-arrow-up-right"></i> Website:
+                  <a href="https://arts.brandbodia.com/" target="_blank"
+                    >arts.brandbodia.com</a
+                  >
+                </h2>
+                <h2>
+                  <i class="fa-brands fa-facebook-square"></i> Facebook:
+                  <a href="#" target="_blank">facebook.com</a>
+                </h2>
+                <p class="mt-2 my-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusamus, tempore tenetur.
+                </p>
+                <a href="#" target="_blank" class="btn btn-primary">Visit</a>
+              </div>
+            </div>
+
+            <div id="brandbodia-modal" class="container-flex hidden">
+              <button class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="item-flex img">
+                <img src="img/portfolio/web/brandbodia.jpg" alt="" />
+              </div>
+              <div class="item-flex desc">
+                <h2>
+                  <i class="fa-solid fa-square-poll-vertical"></i> Project:
+                  <span>Brandbodia</span>
+                </h2>
+                <h2>
+                  <i class="fa-solid fa-square-arrow-up-right"></i> Website:
+                  <a href="https://brandbodia.com/" target="_blank"
+                    >www.brandbodia.com</a
+                  >
+                </h2>
+                <h2>
+                  <i class="fa-brands fa-facebook-square"></i> Facebook:
+                  <a href="#" target="_blank">facebook.com</a>
+                </h2>
+                <p class="mt-2 my-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusamus, tempore tenetur.
+                </p>
+                <a href="#" target="_blank" class="btn btn-primary">Visit</a>
+              </div>
+            </div>
+            <div class="overlay hidden"></div>
+          </div>
+        </div>
+        <div class="media">
+          <h2 class="sub-heading">
+            <i class="fa-solid fa-video"></i> Media
+            <span> Production</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
