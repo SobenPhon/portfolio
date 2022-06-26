@@ -1,0 +1,27 @@
+// --- Portfolio Page ---
+.portfolio {
+  img {
+    width: 100%;
+  }
+
+  .media .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // .master-flex {
+  //   display: flex;
+  //   align-items: flex-start;
+  //   gap: 20px;
+
+  //   .master-flex-item {
+  //     width: 50%;
+  //     flex-grow: 1;
+  //     text-align: center;
+  //   }
+
+  //   .master-flex-item-style {
+  //     // background: var(--third-color);
+  //     // height: 100vh;
+  //   }
+  // }
+}
