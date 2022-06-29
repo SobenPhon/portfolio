@@ -1,4 +1,4 @@
-const nightMode = document.getElementById('night-mode')
+// const nightMode = document.getElementById('night-mode');
 
 const modals = document.querySelector('.modal');
 
@@ -16,9 +16,9 @@ const overlay = document.querySelector('.overlay');
 //   overlay.style.display = 'none';
 // });
 
-nightMode.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-});
+// nightMode.addEventListener('click', () => {
+//   document.body.classList.toggle('dark');
+// });
 
 // Show Modal
 for (let i = 0; i < btnShowModal.length; i++) {
