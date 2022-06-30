@@ -133,7 +133,7 @@ i {
 }
 .heading {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   width: 15%;
   border-bottom: var(--third-color) 2px solid;
@@ -167,7 +167,7 @@ i {
 }
 .third-heading {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
@@ -276,7 +276,7 @@ i {
 }
 .card .card-header p {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .card .card-logo {
   width: 60px;
