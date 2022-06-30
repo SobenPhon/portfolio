@@ -292,6 +292,12 @@ i {
 .card:hover .img-icon {
   transform: scale(1.1);
 }
+.kh-font {
+  font-family: "Battambang", "Anek Latin", sans-serif;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.5;
+}
 .mt-1 {
   margin-top: 5px;
 }
