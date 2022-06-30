@@ -1,5 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap";
-@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap');
 :root {
   --primary-color: #2f2f2f;
   --secondary-color: #343a40;
@@ -138,6 +137,7 @@ i {
   border-bottom: var(--third-color) 2px solid;
   padding-bottom: 3px;
   margin: 30px auto 40px auto;
+  font-weight: 400;
 }
 .sub-heading {
   font-size: 1.5rem;
