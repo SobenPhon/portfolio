@@ -17,7 +17,8 @@
   padding: 0;
 }
 body {
-  font-family: "Anek Latin", sans-serif;
+/*   font-family: "Anek Latin", sans-serif; */
+  font-family: "Anek Latin", sans-serif, "Battambang", cursive;
   color: var(--primary-color);
   background-color: var(--soft-while-color);
 }
