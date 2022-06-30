@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600&display=swap");
 :root {
   --primary-color: #2f2f2f;
   --secondary-color: #343a40;
@@ -76,10 +76,11 @@ a {
 }
 .showcase h2 {
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 .showcase h1 {
   font-size: 3rem;
+  font-weight: 600;
 }
 .showcase .btn {
   margin-right: 5px;
@@ -132,15 +133,16 @@ i {
 }
 .heading {
   font-size: 2rem;
+  font-weight: 500;
   text-align: center;
   width: 15%;
   border-bottom: var(--third-color) 2px solid;
   padding-bottom: 3px;
   margin: 30px auto 40px auto;
-  font-weight: 400;
 }
 .sub-heading {
   font-size: 1.5rem;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
@@ -153,7 +155,6 @@ i {
   color: var(--text-color);
   padding: 6px;
   border-radius: 5px;
-  font-weight: 500;
   display: inline-block;
 }
 .sub-heading-style i {
@@ -166,12 +167,16 @@ i {
 }
 .third-heading {
   font-size: 1.2rem;
+  font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 .third-heading span {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--third-color);
+}
+.title {
+  font-weight: 600;
 }
 .sub-title,
 .sub-date {
