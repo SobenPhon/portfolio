@@ -1,0 +1,131 @@
+// Tablet
+@media (max-width: 1023px) {
+  .heading {
+    width: 15%;
+    font-size: 1.6rem;
+  }
+
+  .sub-heading {
+    font-size: 1.3rem;
+  }
+
+  // || Grid System
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // About Page
+  .about {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // My Work Page
+  .portfolio {
+    .web .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .media .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  // Modal
+  .modal {
+    .container-flex {
+      gap: 15px;
+      width: 90%;
+
+      .close-modal {
+        top: 0.4rem;
+        right: 0.6rem;
+        font-size: 1.5rem;
+        transition: transform 0.15s ease-out;
+      }
+
+      .close-modal:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 767px) {
+  // Header Menu
+  .header {
+    height: 100%;
+    padding: 10px 0;
+
+    .container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-menu ul {
+      display: flex;
+      gap: 2px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+
+  // About Page
+  .about {
+    .gallery-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // Showcase
+  .showcase {
+    .gallery-grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 0;
+
+      .card {
+        border-bottom: 4px solid rgba(51, 51, 51, 0.514);
+        height: 150px;
+      }
+    }
+  }
+
+  // Portfolio Page
+  .portfolio {
+    .web .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .media .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .heading {
+    width: 35%;
+    font-size: 1.5rem;
+    margin: 30px auto;
+  }
+
+  .sub-heading {
+    font-size: 1.25rem;
+  }
+
+  // Modal
+  .modal {
+    .container-flex {
+      flex-direction: column;
+      gap: 15px;
+      width: 90%;
+
+      .item-flex {
+        width: auto;
+        flex-grow: 0;
+      }
+    }
+  }
+}

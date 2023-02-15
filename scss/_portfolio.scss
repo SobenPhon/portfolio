@@ -1,0 +1,25 @@
+.portfolio {
+  .card {
+    .card-body {
+      width: 100%;
+    }
+  }
+
+  .web-container,
+  .side-container {
+    cursor: pointer;
+
+    .card {
+      .card-body {
+        width: 100%;
+        height: 200px;
+        object-fit: contcain;
+      }
+    }
+  }
+
+  // MEDIA Production Grid System
+  .media .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

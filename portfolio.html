@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo/soben-logo-site-icon-2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Menu -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo/soben logo two color.png" alt="soben_logo"
+          /></a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item">
+              <a class="active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item" href="#">Social</a>
+            </li>
+            <!-- <li id="night-mode" class="nav-item">
+              <a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="heading">Portfolio</h1>
+        <div class="web">
+          <h2 class="sub-heading sub-heading-bg">
+            <i class="fa-solid fa-code"></i> Web <span> Development</span>
+          </h2>
+          <div class="gallery-grid web-container"></div>
+          <div class="modals"></div>
+
+          <h3 class="third-heading">
+            <i class="fa-solid fa-list icon"></i>
+            <span>Side Projects</span>
+          </h3>
+          <div class="side-container gallery-grid"></div>
+        </div>
+
+        <div class="media">
+          <h2 class="sub-heading sub-heading-bg">
+            <i class="fa-solid fa-photo-film"></i> Media
+            <span> Production</span>
+          </h2>
+          <div class="media-container">
+            <!-- Media Video -->
+            <div class="media-video">
+              <h3 class="third-heading">
+                <i class="fa-solid fa-film icon"></i>
+                <span>Video Production</span>
+              </h3>
+              <div class="video-container gallery-grid"></div>
+            </div>
+
+            <!-- Media Livestream -->
+            <div class="media-video">
+              <h3 class="third-heading">
+                <i class="fa-solid fa-tower-broadcast icon"></i>
+                <span>Livestream Technician</span>
+              </h3>
+              <div class="livestream-container gallery-grid"></div>
+            </div>
+
+            <!-- Motion Graphic Design -->
+            <div class="media-video">
+              <h3 class="third-heading">
+                <i class="fa-solid fa-person-walking-luggage icon"></i>
+                <span>Motion Graphic Design</span>
+              </h3>
+              <div class="motion-container gallery-grid"></div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="media-video">
+              <h3 class="third-heading">
+                <i class="fa-solid fa-draw-polygon icon"></i>
+                <span>Graphic Design</span>
+              </h3>
+              <div class="graphic-container gallery-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
