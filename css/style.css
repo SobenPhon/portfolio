@@ -1,14 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600&family=Battambang:wght@400;700&display=swap");
 :root {
-  --primary-color: #2f2f2f;
-  --secondary-color: #343a40;
-  --third-color: #ff3333;
-  --text-color: #fff;
-  --hover-color: #efefef29;
-  --soft-while-color: #f4f7fc;
-  --alt-color: #ff3333;
+  --primary: #18181b;
+  --secondary: #27272a;
+  --third: #ff3333;
+  --dark: #18181b;
+  --light: #f4f4f5;
+  --white: #fff;
+  --hv-color: #f1f1f1;
+  --foreground: var(--secondary);
+  --background: var(--light);
+  --card: var(--white);
+  --hover: var(--hv-color);
+  --contrast-fg: var(--light);
+  --contrast-bg: var(--primary);
   --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --box-sd-1: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  --box-sd-2: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.darkmode {
+  --primary: #18181b;
+  --secondary: #27272a;
+  --third: #ff3333;
+  --dark: #18181b;
+  --light: #f4f4f5;
+  --white: #fff;
+  --soft-dark: #efefef29;
+  --dim-light: #e5e5e5e2;
+  --foreground: var(--dim-light);
+  --background: var(--dark);
+  --card: var(--secondary);
+  --hover: var(--soft-dark);
+  --contrast-fg: var(--primary);
+  --contrast-bg: var(--light);
 }
 
 * {
@@ -19,8 +46,8 @@
 
 body {
   font-family: "Anek Latin", sans-serif, "Battambang", cursive;
-  color: var(--primary-color);
-  background-color: var(--soft-while-color);
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 h1,
@@ -36,7 +63,7 @@ a {
 }
 
 .header {
-  background: var(--primary-color);
+  background: var(--card);
   height: 60px;
 }
 .header .container {
@@ -53,6 +80,9 @@ a {
   transform: scale(1.2);
   transform: rotate(-10deg);
 }
+.header .logo > a {
+  display: flex;
+}
 .header .nav-menu ul {
   display: flex;
   gap: 20px;
@@ -63,18 +93,31 @@ a {
 }
 .header ul li a {
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--foreground);
   padding: 6px 15px;
   text-transform: uppercase;
   border-radius: 5px;
   transition: all 0.2s ease-out;
 }
 .header ul li a:hover {
-  background: var(--hover-color);
+  background: var(--hover);
   padding: 6px 15px;
 }
 .header .btn::before {
   border-radius: 5px;
+}
+.header .dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  color: var(--foreground);
+  display: flex;
+  margin-left: 10px;
+}
+.header .dark-mode-toggle i {
+  margin-right: 0;
+  cursor: pointer;
 }
 
 .showcase {
@@ -88,9 +131,6 @@ a {
   font-size: 3rem;
   font-weight: 600;
 }
-.showcase .btn {
-  margin-right: 5px;
-}
 .showcase .gallery-grid {
   grid-template-columns: repeat(2, 350px);
   justify-content: center;
@@ -99,13 +139,15 @@ a {
   padding-bottom: 100px;
 }
 .showcase .gallery-grid .card {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  color: var(--foreground);
+  box-shadow: var(--box-sd-1);
   padding: 20px;
   text-align: center;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .showcase .gallery-grid .button {
   display: flex;
@@ -119,11 +161,11 @@ a {
 }
 .showcase .social-link i {
   font-size: 35px;
-  color: var(--primary-color);
+  color: var(--foreground);
   transition: all 0.2s ease-in;
 }
 .showcase .social-link i:hover {
-  color: var(--third-color);
+  color: var(--third);
   transform: scale(1.2);
 }
 
@@ -146,9 +188,10 @@ i {
   font-weight: 500;
   text-align: center;
   width: 15%;
-  border-bottom: var(--third-color) 2px solid;
+  border-bottom: var(--third) 2px solid;
   padding-bottom: 3px;
   margin: 30px auto 40px auto;
+  color: var(--foreground);
 }
 
 .sub-heading {
@@ -162,18 +205,16 @@ i {
 }
 
 .sub-heading-bg {
-  background: rgba(51, 51, 51, 0.872);
-  box-shadow: var(--box-shadow);
-  color: var(--text-color);
-  padding: 6px;
+  background: var(--secondary);
+  box-shadow: var(--box-sd-1);
+  color: var(--white);
+  padding: 8px 10px;
   border-radius: 5px;
   display: inline-block;
 }
 .sub-heading-bg i {
-  background: var(--text-color);
-  color: var(--third-color);
+  color: var(--third);
   height: 100%;
-  padding: 5px;
   border-radius: 5px;
   font-size: 20px;
 }
@@ -204,17 +245,17 @@ i {
 }
 
 .icon {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--secondary);
+  color: var(--third);
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .btn {
   padding: 10px 15px;
   border: none;
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--contrast-bg);
+  color: var(--contrast-fg);
   text-transform: uppercase;
   border-radius: 3px;
   display: inline-block;
@@ -230,7 +271,7 @@ i {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: var(--third-color);
+  background-color: var(--third);
   border-radius: 3px;
   transition: transform 0.2s ease-in;
   transform: scaleX(0);
@@ -243,16 +284,17 @@ i {
 }
 
 .btn-primary {
-  background: var(--primary-color);
-  color: var(--text-color);
+  color: var(--background);
   transition: all 0.2s ease-out;
+  white-space: nowrap;
 }
 .btn-primary:hover {
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--foreground);
 }
 
 .btn-secondary {
-  background-color: var(--third-color);
+  background-color: var(--third);
+  color: var(--white);
 }
 
 .btn-secondary::before {
@@ -263,16 +305,11 @@ i {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   border-radius: 3px;
   transition: transform 0.2s ease-in;
   transform: scaleX(0);
   transform-origin: left;
-}
-
-.btn-secondary:hover::before,
-.btn-secondary:focus::before {
-  transform: scaleX(1);
 }
 
 .btn-third {
@@ -280,10 +317,11 @@ i {
 }
 
 .card {
-  box-shadow: var(--box-shadow);
-  border-bottom: 4px solid var(--primary-color);
+  box-shadow: var(--box-sd-1);
+  border-bottom: 4px solid var(--foreground);
   transition: all 0.4s ease-out;
-  background: var(--text-color);
+  background-color: var(--card);
+  color: var(--foreground);
 }
 .card .card-body {
   display: block;
@@ -291,14 +329,15 @@ i {
 .card .card-header {
   padding: 10px;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 .card .card-header .img-icon {
-  box-shadow: var(--box-shadow);
-  padding: 5px;
+  box-shadow: var(--box-sd-1);
+  background-color: var(--background);
+  padding: 3px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 5px;
   transition: transform 0.4s ease-out;
 }
 .card .card-header p {
@@ -308,15 +347,16 @@ i {
 .card .card-logo {
   width: 60px;
   height: 60px;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-sd-1);
   border-radius: 50%;
 }
-
+.card .card-title {
+  color: var(--foreground);
+}
 .card:hover {
   transform: scale(1.03);
-  border-bottom: 4px solid var(--third-color);
+  border-bottom: 4px solid var(--third);
 }
-
 .card:hover .img-icon {
   transform: scale(1.1);
 }
@@ -348,11 +388,16 @@ i {
 .active {
   padding: 6px 15px;
   border-radius: 5px;
-  background-color: var(--third-color);
+  background-color: var(--third);
+  color: var(--white) !important;
+}
+.active:hover {
+  background-color: var(--third) !important;
+  color: var(--white) !important;
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 .overlay {
@@ -405,32 +450,29 @@ i {
   top: 50%;
   transform: translate(-50%, -50%);
   width: auto;
-  background-color: #fff;
+  background-color: var(--card);
   padding: 2rem;
   border-radius: 5px;
-  box-shadow: var(--box-shadow);
   z-index: 10;
-}
-.modals .container-flex .img {
-  border: 1px solid #dadada;
-  border-radius: 5px;
 }
 .modals .container-flex .img img {
   width: 250px;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .modals .container-flex .desc h2 {
   font-size: 18px;
   margin: 0;
   line-height: 1.5;
-  color: var(--primary-color);
+  color: var(--foreground);
   text-transform: none;
 }
 .modals .container-flex .desc h2 span {
   font-weight: normal;
 }
 .modals .container-flex .desc h2 a {
-  color: var(--third-color);
+  color: var(--third);
   font-weight: normal;
 }
 .modals .container-flex .desc p {
@@ -441,7 +483,7 @@ i {
   top: 0.4rem;
   right: 0.6rem;
   font-size: 2rem;
-  color: var(--primary-color);
+  color: var(--foreground);
   cursor: pointer;
   border: none;
   background: none;
@@ -451,6 +493,16 @@ i {
   transform: scale(1.2);
 }
 
+.skeleton {
+  animation: skeleton 1s ease-out infinite alternate;
+  background-color: #d3d3d3;
+}
+
+@keyframes skeleton {
+  to {
+    opacity: 0.5;
+  }
+}
 @media (max-width: 400px) {
   .modals .container-flex {
     display: block;
@@ -479,8 +531,8 @@ i {
 .portfolio .side-container .card .card-body {
   width: 100%;
   height: 200px;
-  -o-object-fit: contcain;
-     object-fit: contcain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .portfolio .media .gallery-grid {
   grid-template-columns: repeat(4, 1fr);

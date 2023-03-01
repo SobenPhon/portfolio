@@ -20,12 +20,47 @@ const modalsContainer = document.querySelector('.modals')
 
 let webData = []
 
+// $(function () {
+//   $("#header").load("header.html", () => {
+//     // const navLinks_el = $('.nav-link')
+//     const pathname = window.location.pathname
+//     console.log(pathname)
+//   })
+
+//   // const navLinks_el = document.querySelectorAll('.nav-link')
+//   // console.log(navLinks_el)
+// })
+
+const counter = [1, 2, 3, 4, 5, 6]
+
+webContainer.innerHTML = counter.map(i => (
+  `
+  <div class="card skeleton">
+    <div class="card-body"></div>
+  </div>
+  `
+)).join('')
+
 const fetchData = async () => {
   const response = await fetch(`./db/portfolio.json`)
   const json = await response.json()
 
   webData = json.filter(cat => cat.web)
   media = json.filter(cat => cat.media)
+
+  // let webLength
+  // webData.forEach(item => {
+  //   webLength = item.web.length
+  // })
+
+  // for (let i = 0; i < webLength; i++) {
+  //   webContainer.innerHTML +=
+  //     `
+  //     <div class="card skeleton">
+  //       <div class="card-body"></div>
+  //     </div>
+  //     `
+  // }
 
   webData.forEach(item => {
     webContainer.innerHTML = item.web.map(w => (
@@ -84,8 +119,16 @@ const createWebItem = (item, modalClass) => (
         src="${item.logo}"
         alt="${item.title}"
       />
-      <p>${item.title}</p>
+      <p class="card-title">${item.title}</p>
     </div>
+  </div>
+  `
+)
+
+const createSkeleton = () => (
+  `
+  <div class="card skeleton">
+    <div class="card-body"></div>
   </div>
   `
 )
@@ -108,7 +151,7 @@ const createItem = (item) => (
         src="${item.logo}"
         alt="${item.title}"
       />
-      <p>${item.title}</p>
+      <p class="card-title">${item.title}</p>
     </div>
   </a>
   `
@@ -159,7 +202,7 @@ function showModal(modalId, modal) {
         item.side.map((w, id) => {
           if (w.id === modalId) {
             modalsContainer.innerHTML = (
-              createModal(w)
+              createSideModal(w)
             )
           }
         })
@@ -201,6 +244,46 @@ const createModal = (data) => (
           href="${data.detail.facebook}"
           target="_blank"
           >${data.detail.project}</a
+        >
+      </h2>
+      <p class="mt-2 my-2">${data.detail.description}</p>
+      <a
+        href="${data.detail.url}"
+        target="_blank"
+        class="btn btn-primary"
+        >Visit Website</a
+      >
+    </div>
+  </div>
+  `
+)
+
+const createSideModal = (data) => (
+  `
+  <div class="container-flex">
+    <button class="close-modal">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="item-flex img">
+      <img src="${data.image}" alt="" />
+    </div>
+    <div class="item-flex desc">
+      <h2>
+        <i class="fa-solid fa-square-poll-vertical"></i> Project:
+        <span>${data.detail.project}</span>
+      </h2>
+      <h2>
+        <i class="fa-solid fa-square-arrow-up-right"></i> Website:
+        <a href="${data.detail.url}">
+          ${data.detail.url}
+        </a>
+      </h2>
+      <h2>
+        <i class="fa-brands fa-github-square"></i> Source code:
+        <a
+          href="${data.detail.source}"
+          target="_blank"
+          >${data.detail.source}</a
         >
       </h2>
       <p class="mt-2 my-2">${data.detail.description}</p>

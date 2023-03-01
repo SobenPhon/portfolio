@@ -18,9 +18,10 @@ i {
   font-weight: 500;
   text-align: center;
   width: 15%;
-  border-bottom: var(--third-color) 2px solid;
+  border-bottom: var(--third) 2px solid;
   padding-bottom: 3px;
   margin: 30px auto 40px auto;
+  color: var(--foreground);
 }
 
 .sub-heading {
@@ -35,18 +36,16 @@ i {
 }
 
 .sub-heading-bg {
-  background: rgba(51, 51, 51, 0.872);
-  box-shadow: var(--box-shadow);
-  color: var(--text-color);
-  padding: 6px;
+  background: var(--secondary);
+  box-shadow: var(--box-sd-1);
+  color: var(--white);
+  padding: 8px 10px;
   border-radius: 5px;
   display: inline-block;
 
   i {
-    background: var(--text-color);
-    color: var(--third-color);
+    color: var(--third);
     height: 100%;
-    padding: 5px;
     border-radius: 5px;
     font-size: 20px;
   }
@@ -56,7 +55,6 @@ i {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: capitalize;
-  // margin: 20px 0;
   margin-bottom: 20px;
 
   span {
@@ -80,17 +78,17 @@ i {
 }
 
 .icon {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--secondary);
+  color: var(--third);
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .btn {
   padding: 10px 15px;
   border: none;
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--contrast-bg);
+  color: var(--contrast-fg);
   text-transform: uppercase;
   border-radius: 3px;
   display: inline-block;
@@ -106,7 +104,7 @@ i {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: var(--third-color);
+  background-color: var(--third);
   border-radius: 3px;
 
   transition: transform 0.2s ease-in;
@@ -120,17 +118,18 @@ i {
 }
 
 .btn-primary {
-  background: var(--primary-color);
-  color: var(--text-color);
+  color: var(--background);
   transition: all 0.2s ease-out;
+  white-space: nowrap;
 
   &:hover {
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--foreground);
   }
 }
 
 .btn-secondary {
-  background-color: var(--third-color);
+  background-color: var(--third);
+  color: var(--white);
 }
 
 .btn-secondary::before {
@@ -141,7 +140,7 @@ i {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   border-radius: 3px;
 
   transition: transform 0.2s ease-in;
@@ -149,20 +148,16 @@ i {
   transform-origin: left;
 }
 
-.btn-secondary:hover::before,
-.btn-secondary:focus::before {
-  transform: scaleX(1);
-}
-
 .btn-third {
   background: var(--third-color);
 }
 
 .card {
-  box-shadow: var(--box-shadow);
-  border-bottom: 4px solid var(--primary-color);
+  box-shadow: var(--box-sd-1);
+  border-bottom: 4px solid var(--foreground);
   transition: all 0.4s ease-out;
-  background: var(--text-color);
+  background-color: var(--card);
+  color: var(--foreground);
 
   .card-body {
     display: block;
@@ -171,14 +166,15 @@ i {
   .card-header {
     padding: 10px;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--primary);
 
     .img-icon {
-      box-shadow: var(--box-shadow);
-      padding: 5px;
+      box-shadow: var(--box-sd-1);
+      background-color: var(--background);
+      padding: 3px;
       width: 40px;
       height: 40px;
-      border-radius: 50%;
+      border-radius: 5px;
       transition: transform 0.4s ease-out;
     }
 
@@ -191,25 +187,22 @@ i {
   .card-logo {
     width: 60px;
     height: 60px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-sd-1);
     border-radius: 50%;
   }
-}
 
-// .kh-font {
-//   font-family: "Battambang", "Anek Latin", sans-serif;
-//   font-size: 16px !important;
-//   font-weight: 600 !important;
-//   line-height: 1.5;
-// }
+  .card-title {
+    color: var(--foreground);
+  }
 
-.card:hover {
-  transform: scale(1.03);
-  border-bottom: 4px solid var(--third-color);
-}
+  &:hover {
+    transform: scale(1.03);
+    border-bottom: 4px solid var(--third);
+  }
 
-.card:hover .img-icon {
-  transform: scale(1.1);
+  &:hover .img-icon {
+    transform: scale(1.1);
+  }
 }
 
 .mt-1 {
@@ -239,11 +232,17 @@ i {
 .active {
   padding: 6px 15px;
   border-radius: 5px;
-  background-color: var(--third-color);
+  background-color: var(--third);
+  color: var(--white) !important;
+
+  &:hover {
+    background-color: var(--third) !important;
+    color: var(--white) !important;
+  }
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 // Overlay
@@ -303,24 +302,16 @@ i {
     transform: translate(-50%, -50%);
     width: auto;
 
-    background-color: #fff;
+    background-color: var(--card);
     padding: 2rem;
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
     z-index: 10;
 
-    // .item-flex {
-    //   width: 5rem;
-    //   flex-grow: 1;
-    // }
-
     .img {
-      border: 1px solid #dadada;
-      border-radius: 5px;
-
       img {
         width: 250px;
         height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -329,7 +320,7 @@ i {
         font-size: 18px;
         margin: 0;
         line-height: 1.5;
-        color: var(--primary-color);
+        color: var(--foreground);
         text-transform: none;
 
         span {
@@ -337,7 +328,7 @@ i {
         }
 
         a {
-          color: var(--third-color);
+          color: var(--third);
           font-weight: normal;
         }
       }
@@ -352,7 +343,7 @@ i {
       top: 0.4rem;
       right: 0.6rem;
       font-size: 2rem;
-      color: var(--primary-color);
+      color: var(--foreground);
       cursor: pointer;
       border: none;
       background: none;
@@ -362,6 +353,17 @@ i {
     .close-modal:hover {
       transform: scale(1.2);
     }
+  }
+}
+
+.skeleton {
+  animation: skeleton 1s ease-out infinite alternate;
+  background-color: #d3d3d3;
+}
+
+@keyframes skeleton {
+  to {
+    opacity: 0.5;
   }
 }
 

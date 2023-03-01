@@ -2,16 +2,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600&family=Battambang:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #2f2f2f;
-  --secondary-color: #343a40;
-  --third-color: #ff3333;
-  --text-color: #fff;
-  --hover-color: #efefef29;
-  --soft-while-color: #f4f7fc;
-  --alt-color: #ff3333;
+  --primary: #18181b;
+  --secondary: #27272a;
+  --third: #ff3333;
+  --dark: #18181b;
+  --light: #f4f4f5;
+  --white: #fff;
+  --hv-color: #f1f1f1;
+
+  --foreground: var(--secondary);
+  --background: var(--light);
+  --card: var(--white);
+  --hover: var(--hv-color);
+  --contrast-fg: var(--light);
+  --contrast-bg: var(--primary);
 
   --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --box-sd-1: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  --box-sd-2: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.darkmode {
+  --primary: #18181b;
+  --secondary: #27272a;
+  --third: #ff3333;
+  --dark: #18181b;
+  --light: #f4f4f5;
+  --white: #fff;
+  --soft-dark: #efefef29;
+  --dim-light: #e5e5e5e2;
+
+  // --foreground: var(--light);
+  --foreground: var(--dim-light);
+  --background: var(--dark);
+  --card: var(--secondary);
+  --hover: var(--soft-dark);
+  --contrast-fg: var(--primary);
+  --contrast-bg: var(--light);
 }
 
 * {
@@ -21,13 +51,16 @@
 }
 
 body {
-  // font-family: "Anek Latin", sans-serif;
   font-family: "Anek Latin", sans-serif, "Battambang", cursive;
-  color: var(--primary-color);
-  background-color: var(--soft-while-color);
-  // background-color: var(--secondary-color);
-  // color: #fff;
+  color: var(--foreground);
+  background-color: var(--background);
 }
+
+// p::selection,
+// h1::selection {
+//   background-color: var(--secondary-color);
+//   color: var(--text-color);
+// }
 
 h1,
 h2,
@@ -42,9 +75,8 @@ a {
 }
 
 // --- Header ---
-
 .header {
-  background: var(--primary-color);
+  background: var(--card);
   height: 60px;
 
   .container {
@@ -64,6 +96,10 @@ a {
     transform: rotate(-10deg);
   }
 
+  .logo > a {
+    display: flex;
+  }
+
   .nav-menu ul {
     display: flex;
     gap: 20px;
@@ -76,7 +112,7 @@ a {
 
   ul li a {
     font-size: 18px;
-    color: var(--text-color);
+    color: var(--foreground);
     padding: 6px 15px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -84,18 +120,32 @@ a {
   }
 
   ul li a:hover {
-    background: var(--hover-color);
+    background: var(--hover);
     padding: 6px 15px;
   }
 
   .btn::before {
     border-radius: 5px;
   }
+
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    color: var(--foreground);
+    display: flex;
+    margin-left: 10px;
+
+    i {
+      margin-right: 0;
+      cursor: pointer;
+    }
+  }
 }
 
 // --- Showcase ---
 .showcase {
-  // background: pink;
   margin-top: 20px;
 
   h2 {
@@ -108,10 +158,6 @@ a {
     font-weight: 600;
   }
 
-  .btn {
-    margin-right: 5px;
-  }
-
   .gallery-grid {
     grid-template-columns: repeat(2, 350px);
     justify-content: center;
@@ -119,8 +165,11 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 
+    // Card for index.html
     .card {
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+      color: var(--foreground);
+      // box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+      box-shadow: var(--box-sd-1);
       padding: 20px;
       text-align: center;
       height: 200px;
@@ -128,6 +177,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 10px;
     }
 
     .button {
@@ -146,12 +196,12 @@ a {
 
     i {
       font-size: 35px;
-      color: var(--primary-color);
+      color: var(--foreground);
       transition: all 0.2s ease-in;
     }
 
     i:hover {
-      color: var(--third-color);
+      color: var(--third);
       transform: scale(1.2);
     }
   }

@@ -1,0 +1,178 @@
+[
+  {
+    "education": [
+      {
+        "id": "ed1",
+        "title": "IEAP",
+        "place": "PUC - Institute of Foreign Languages",
+        "date": "2017 - 2018",
+        "description": "I attended the Intensive English for Academic Purposes (IEAP) course focused on English language at PUC-IFL.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fpuc%20logo.png?alt=media&token=602e558c-d9a8-43df-9a74-9a06c1c18e0a"
+      },
+      {
+        "id": "ed2",
+        "title": "Computer Science & Engineering",
+        "place": "Royal University of Phnom Penh",
+        "date": "2016 - 2020",
+        "description": "I graduated from the Department of Information Technology majoring in the Computer Science & Engineering at the Royal University of Phnom Penh.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2FRUPP%20Logo.png?alt=media&token=c704caba-e2e0-4364-b84e-7e78071c6c14"
+      }
+    ]
+  },
+  {
+    "courses": [
+      {
+        "id": "co1",
+        "title": "Samsung Galaxy A 2017 Photography Sharing Session",
+        "place": "Samsung Cambodia Fan Club",
+        "date": "2017",
+        "description": "Samsung Galaxy A 2017 Photography Sharing Session",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fsamsung.jpg?alt=media&token=5dd5797f-5c94-4c24-b333-e3d7667a6de4"
+      },
+      {
+        "id": "co2",
+        "title": "Basic Computer and Applications",
+        "place": "PUC - Institute of Foreign Languages",
+        "date": "2017",
+        "description": "Windows, Microsoft Offices",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fpuc%20logo.png?alt=media&token=602e558c-d9a8-43df-9a74-9a06c1c18e0a"
+      },
+      {
+        "id": "co3",
+        "title": "Computer Maintenance/Repair",
+        "place": "ITGROUP KH",
+        "date": "2018",
+        "description": "Explore about Computer hardware and how to repair corrupted software.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fitgroup%20kh.jpg?alt=media&token=3f675bd7-76dc-4947-be43-bd9d12d93c31"
+      },
+      {
+        "id": "co4",
+        "title": "The Powerfull of Documentary Photography",
+        "place": "Fujifilm X-Series Cambodia",
+        "date": "2019",
+        "description": "The Powerfull of Documentary Photography Workshop By Thomas Tham",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Ffujifilm.jpg?alt=media&token=88ba46d0-412d-4b49-865e-5ebf6289d26f"
+      },
+      {
+        "id": "co5",
+        "title": "DJI Workshop: Making Great Video",
+        "place": "Leng kheang ឡេងឃាង / DJI",
+        "date": "2019",
+        "description": "A workshop about how to make great video and also products demostration.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fleng%20kheang.jpg?alt=media&token=08f8c0aa-4632-4db8-9985-01090726bc79"
+      }
+    ]
+  },
+  {
+    "experience": [
+      {
+        "id": "exp1",
+        "title": "5th National Robot Compitition 2018",
+        "place": "Robocon Cambodia",
+        "date": "2018",
+        "description": "Competitor from RUPP Team 2 at the 5th national robot compitition 2018 and an Innovation Award winner team.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Frobocon%20cambodia.jpg?alt=media&token=320441a9-5d2b-4e00-a653-217e111f2e11"
+      },
+      {
+        "id": "exp2",
+        "title": "Videographer at Clean & Green",
+        "place": "Clean & Green RUPP",
+        "date": "2019",
+        "description": "Volunteering as videographer for the reduce the use of plastics and zero plastic concert event.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fclean%20%26%20green%20logo.jpg?alt=media&token=a35735ba-174c-4f72-ba80-58997c0eab77"
+      },
+      {
+        "id": "exp3",
+        "title": "Videographer/Editor",
+        "place": "Angkor Sankranta",
+        "date": "2020",
+        "description": "Produce videos/contents for Siemreap Sankranta 2020",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2FAngkor%20Sankranta%20logo.png?alt=media&token=9b9de535-c55a-4aab-acbc-4b849402d761"
+      },
+      {
+        "id": "exp4",
+        "title": "Videographer",
+        "place": "BRANDBODIA",
+        "date": "2019 - 2021",
+        "description": "I did lots of kinds of videos like promotional videos, educational videos, and event recaps. As a videographer, I am also responsible for setting up equipment like cameras, sound, lighting, and more.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbrandbodia.png?alt=media&token=f7e34405-4274-4990-ab73-7235aabb4494"
+      },
+      {
+        "id": "exp5",
+        "title": "Video Editor",
+        "place": "BRANDBODIA",
+        "date": "2019 - 2021",
+        "description": "Besides shooting on set I am also responsible for the finishing product is to edit the video to the final look by adding effect, color correction, color grading, transition, adjusting frame-rate, and motion graphic as well.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbrandbodia.png?alt=media&token=f7e34405-4274-4990-ab73-7235aabb4494"
+      },
+      {
+        "id": "exp6",
+        "title": "Motion Graphic Designer",
+        "place": "BRANDBODIA",
+        "date": "2019 - 2021",
+        "description": "As a motion graphic designer, I focus on making still graphics into smooth animation using tool like After Effect.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbrandbodia.png?alt=media&token=f7e34405-4274-4990-ab73-7235aabb4494"
+      },
+      {
+        "id": "exp7",
+        "title": "Livestream Technician",
+        "place": "BRANDMEDIA",
+        "date": "2021 - Present",
+        "description": "I manage livestrem for the online talk shows in which we talk about interesting topics. I am responsible for creating the overlay, setting up streaming software, and making sure it runs smoothly.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbrandbodia.png?alt=media&token=f7e34405-4274-4990-ab73-7235aabb4494"
+      },
+      {
+        "id": "exp8",
+        "title": "WordPress Developer",
+        "place": "BRANDBODIA",
+        "date": "2020 - Present",
+        "description": "I develope websites using WordPress for the company and do freelancing as well and now currently manage and maintain websites at BRANDMEDIA and Department of English IFL.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbrandbodia.png?alt=media&token=f7e34405-4274-4990-ab73-7235aabb4494"
+      },
+      {
+        "id": "exp9",
+        "title": "Department of English IFL Website",
+        "place": "DOE Institute of Foreign Languages",
+        "date": "2022 - Present",
+        "description": "I developed Department of English IFL's website and now currently manage and maintain the site.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2FIFL%20Logo.png?alt=media&token=0c08a5da-e886-43cc-ae6f-807096a0e781"
+      }
+    ]
+  },
+  {
+    "activities": [
+      {
+        "id": "act1",
+        "title": "BarCamp ASEAN 2018",
+        "place": "BarCamp Phnom Penh",
+        "date": "2018",
+        "description": "BarCamp ASEAN 2018 - Regional Tech Conference & Startup Expo at Institute of Technology of Cambodia (ITC)",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbarcamp%202018.jpg?alt=media&token=0c297eda-fff9-4a94-9823-e520cc212526"
+      },
+      {
+        "id": "act2",
+        "title": "Global Game Jam 2018",
+        "place": "Global Game Jam Phnom Penh",
+        "date": "2018",
+        "description": "The first workshop Secrets of Game design with Akira Morita. A game development workshops, activities and try to create a game in a team just in 48h!",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fglobal%20game%20jam.jpg?alt=media&token=dfbb9ae7-ff0a-4933-99ac-6051901cafa6"
+      },
+      {
+        "id": "act3",
+        "title": "BarCamp ASEAN 2019",
+        "place": " BarCamp Phnom Penh",
+        "date": "2019",
+        "description": "BarCamp ASEAN 2019 - Regional Tech Conference and Exhibition at Institute of Technology of Cambodia (ITC)",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fbarcamp%202019.jpg?alt=media&token=3ea38489-1e1c-447a-b988-3eeb101d2e4f"
+      },
+      {
+        "id": "act4",
+        "title": "Canon Photomarathon Cambodia IX",
+        "place": "Iqlick Cambodia",
+        "date": "2019",
+        "description": "Competitor in Canon Photomarathon Cambodia IX, live photo competition in Cambodia.",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/logo%2Fabout-logo%2Fcanon%20photomarathon.jpg?alt=media&token=89a622bd-e291-4b79-be89-417d1b7b88b9"
+      }
+    ]
+  }
+]
