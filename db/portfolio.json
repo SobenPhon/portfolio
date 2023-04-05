@@ -110,6 +110,30 @@
           "source": "https://github.com/SobenPhon/product-filter",
           "description": "Filter products using javascript."
         }
+      },
+      {
+        "id": "side4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/portfolio%2Fweb%2Fside%2Fscoreboard-plugin.png?alt=media&token=96e28576-65b5-4a1c-8ace-d1779d1d021c",
+        "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        "title": "Scoreboard Control Plugin",
+        "detail": {
+          "project": "Scoreboard control plugin for obs",
+          "url": "https://sobenphon.github.io/scoreboard-obs-plugin/",
+          "source": "https://github.com/SobenPhon/scoreboard-obs-plugin",
+          "description": "Live update scoreboard control for live stream with OBS software."
+        }
+      },
+      {
+        "id": "side5",
+        "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-image-9a1af.appspot.com/o/portfolio%2Fweb%2Fside%2Fstopwatch-plugin.png?alt=media&token=141e076c-c7c4-42f8-acf8-290657ea888a",
+        "logo": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        "title": "Stopwatch Control Plugin",
+        "detail": {
+          "project": "Stopwatch control plugin for OBS",
+          "url": "https://sobenphon.github.io/stopwatch-obs-plugin/",
+          "source": "https://github.com/SobenPhon/stopwatch-obs-plugin",
+          "description": "A custom plugin for controlling time for sport live stream like football. Can you with OBS broadcasting software."
+        }
       }
     ]
   },
