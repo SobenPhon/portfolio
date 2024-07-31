@@ -1,12 +1,3 @@
-// const nightMode = document.getElementById('night-mode');
-
-// const doeModal = document.getElementById('doe-modal');
-// const brandmediaModal = document.getElementById('brandmedia-modal');
-// const brandtechModal = document.getElementById('brandtech-modal');
-// const brandartsModal = document.getElementById('brandarts-modal');
-// const brandbodiaModal = document.getElementById('brandbodia-modal');
-// const overlay = document.querySelector('.overlay');
-// const btnShowModal = document.querySelectorAll('.show-modal');
 const btnCloseModals = document.querySelectorAll('.close-modal');
 
 const webContainer = document.querySelector('.web-container')
@@ -19,17 +10,6 @@ const graphicContainer = document.querySelector('.graphic-container')
 const modalsContainer = document.querySelector('.modals')
 
 let webData = []
-
-// $(function () {
-//   $("#header").load("header.html", () => {
-//     // const navLinks_el = $('.nav-link')
-//     const pathname = window.location.pathname
-//     console.log(pathname)
-//   })
-
-//   // const navLinks_el = document.querySelectorAll('.nav-link')
-//   // console.log(navLinks_el)
-// })
 
 const counter = [1, 2, 3, 4, 5, 6]
 
@@ -47,20 +27,6 @@ const fetchData = async () => {
 
   webData = json.filter(cat => cat.web)
   media = json.filter(cat => cat.media)
-
-  // let webLength
-  // webData.forEach(item => {
-  //   webLength = item.web.length
-  // })
-
-  // for (let i = 0; i < webLength; i++) {
-  //   webContainer.innerHTML +=
-  //     `
-  //     <div class="card skeleton">
-  //       <div class="card-body"></div>
-  //     </div>
-  //     `
-  // }
 
   webData.forEach(item => {
     webContainer.innerHTML = item.web.map(w => (
@@ -225,7 +191,7 @@ const createModal = (data) => (
       <i class="fa-solid fa-xmark"></i>
     </button>
     <div class="item-flex img">
-      <img src="${data.image}" alt="" />
+      <img src="${data.modalImg}" alt="" />
     </div>
     <div class="item-flex desc">
       <h2>
